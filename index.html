@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+<title>form-validation</title>
+</head>
+<body>
+<script>
+	let obj={
+		name="durga",
+		password:12345,
+}
+
+	function mtFunction(event){
+		var name=document.getElementByid("name");
+		var password=document.getElementByid("password");
+	if(obj.name==name.value && obj.password==password.value){
+			alert("successful");
+			return false;
+		}
+		else{
+			alert("invalid");
+			return false;
+		}
+}
+</script>
+<section class="container">
+	<h1>Login Form</h1>
+	<form>
+		<input type="text" placeholder="enter a name" id="name"><br><br>
+		<input type="password" placeholder="enter a password" id="password"><br><br>
+		<button type="submit" id="btn" onclick="myFunction()">LOGIN</button><br><br>
+	</form>
+
+</section>
+</body>
+</html>
